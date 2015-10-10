@@ -47,6 +47,12 @@
 #   end
 # end
 
+
+activate :blog do |blog|
+  # set options on blog
+end
+
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'

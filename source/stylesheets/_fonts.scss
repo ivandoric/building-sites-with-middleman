@@ -1,2 +1,37 @@
+body{
+    font-family: 'Helevetica', sans-serif;
+}
 
+
+h1, h2, h3, h4, h5, h6, p{
+    line-height: 1.5;
+}
+
+
+h1{
+    font-size: rem(48px);
+    margin: rem(30px) 0;
+}
+
+h2{
+    font-size: rem(32px);
+    margin: rem(20px) 0;
+}
+
+h3{
+    font-size: rem(24px);
+    margin: rem(20px) 0;
+}
+
+h4 {
+    font-size: rem(18px);
+    margin: rem(20px) 0;
+}
+
+p{
+    font-size:rem(18px);
+    line-height: 1.8;
+    color:#787f8c;
+    margin: rem(30px) 0;
+}
 
