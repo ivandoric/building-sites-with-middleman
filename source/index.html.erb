@@ -5,12 +5,17 @@ title: Welcome to Middleman
 <div class="container">
     <h1>This is where the content goes.</h1>
 
-    <h2>Check out our blog.</h2>
-    <br><br>
+    <h2>Check out my videos</h2>
+    <br>
 
-    <% blog.articles[0...5].each do |article| %>
+    <% blog('videos').articles[0...5].each do |article| %>
+        <a href="<%= article.url  %>"><%= article.title %></a> - <%= article.data.videotime  %><br>
+    <% end %>
 
+    <h2>Check out my articles</h2>
+    <br>
+
+    <% blog('text').articles[0...5].each do |article| %>
         <a href="<%= article.url  %>"><%= article.title %></a><br>
-
     <% end %>
 </div>

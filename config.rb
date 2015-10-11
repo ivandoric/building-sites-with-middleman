@@ -49,8 +49,16 @@
 
 
 activate :blog do |blog|
-  # set options on blog
+  blog.name = "videos"
+  blog.prefix = "videos"
+  blog.new_article_template = "source/article-templates/video-template.erb"
 end
+
+activate :blog do |blog|
+  blog.name = "text"
+  blog.prefix = "text"
+end
+
 
 
 set :css_dir, 'stylesheets'
