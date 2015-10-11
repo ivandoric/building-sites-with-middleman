@@ -59,8 +59,6 @@ activate :blog do |blog|
   blog.prefix = "text"
 end
 
-
-
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
