@@ -1,3 +1,3 @@
-This is a github repository for the series of videos that I'm doing on Youtube. You can [https://www.youtube.com/c/WatchandLearnTutorials](check those videos out on my Youtube channel )
+This is a github repository for the series of videos that I'm doing on Youtube. You can [check those videos out on my Youtube channel](https://www.youtube.com/c/WatchandLearnTutorials)
 
-If you want to grab code used in those tutorials you can just download .zip file for the current video. Or you can click on [https://github.com/ivandoric/building-sites-with-middleman/releases](releases link) and grab the code for the specific video.
+If you want to grab code used in those tutorials you can just download .zip file for the current video. Or you can click on [releases link](https://github.com/ivandoric/building-sites-with-middleman/releases) and grab the code for the specific video.
