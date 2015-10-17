@@ -8,7 +8,7 @@ title: Welcome to Middleman
         <% blog('videos').articles[0...5].each do |article| %>
             <div class="video-list-item">
                 <h3><a href="<%= article.url  %>"><%= article.title %></a></h3>
-                <%= image_tag(article.data.image) %>
+                <%= thumb_tag article.data.image, '400x' %>
                 <p><%= article.data.introtext %></p>
 
                 <%= link_to("Read more", article.url) %>

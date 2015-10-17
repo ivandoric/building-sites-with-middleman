@@ -69,6 +69,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :directory_indexes
+activate :dragonfly_thumbnailer
 
 # Build-specific configuration
 configure :build do
