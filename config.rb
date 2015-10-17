@@ -52,6 +52,7 @@ activate :blog do |blog|
   blog.name = "videos"
   blog.prefix = "videos"
   blog.permalink = "{title}"
+  blog.layout = "video-layout"
   blog.new_article_template = "source/article-templates/video-template.erb"
 end
 

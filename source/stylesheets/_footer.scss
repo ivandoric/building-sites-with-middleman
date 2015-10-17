@@ -1,4 +1,22 @@
 footer{
-    background: #efefef;
-    padding:20px;
+    margin-top: rem(60px);
+    background: #E1E1E1;
+    padding:20px 0 0 0;
+}
+
+.mission-statement{
+    @include span(4 of 12);
+}
+
+.copy{
+    background: $darkgray;
+    padding:20px 0;
+    margin-top: rem(60px);
+    
+    p{
+        text-align: center;
+        color:#fff;
+        margin:0;
+        font-size: 11px;
+    }
 }

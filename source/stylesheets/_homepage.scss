@@ -1,0 +1,16 @@
+.video-list{
+    margin-top: rem(80px);
+
+    a{
+        color:#666;
+        text-decoration: none;
+        
+        &:hover{
+            color:$orange;
+        }
+    }
+}
+
+.video-list-item{
+    margin-bottom: rem(40px);
+}
