@@ -10,10 +10,20 @@ title: Welcome to Middleman
                 <h3><a href="<%= article.url  %>"><%= article.title %></a></h3>
                 <%= thumb_tag article.data.image, '400x' %>
                 <p><%= article.data.introtext %></p>
-
+                <ol>
+                  <% article.tags.each do |tag, articles| %>
+                    <li><%= link_to "#{tag}", tag_path(tag, 'videos') %></li>
+                  <% end %>
+                </ol>
                 <%= link_to("Read more", article.url) %>
             </div>
         <% end %>
     </div>
 
+    <h2>Tags</h2>
+    <ol>
+      <% blog('videos').tags.each do |tag, articles| %>
+        <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag, 'videos') %></li>
+      <% end %>
+    </ol>
 </div>
