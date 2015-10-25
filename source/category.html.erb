@@ -3,7 +3,7 @@ pageable: true
 per_page: 12
 ---
 <div class="container">
-    <h2>Articles tagged '<%= tagname %>'</h2>
+    <h2>Category: <%= category %></h2>
     
     <% if paginate && num_pages > 1 %>
       <p>Page <%= page_number %> of <%= num_pages %></p>

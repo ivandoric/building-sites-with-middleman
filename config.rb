@@ -55,6 +55,13 @@ activate :blog do |blog|
   blog.layout = "video-layout"
   blog.tag_template = "tag.html"
   blog.new_article_template = "source/article-templates/video-template.erb"
+
+  blog.custom_collections = {
+      category: {
+        link: '/categories/{category}',
+        template: '/category.html'
+      }
+    }
 end
 
 activate :blog do |blog|

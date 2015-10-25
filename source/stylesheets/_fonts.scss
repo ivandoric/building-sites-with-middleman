@@ -2,7 +2,7 @@
 /* Setup */
 html {
   /* Change default typefaces here */
-    font-family: sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
     font-size: 100%;
     -webkit-font-smoothing: antialiased;
 }
@@ -42,9 +42,9 @@ h5,
 h6 {
   /* Change heading typefaces here */
     font-family: sans-serif;
-    margin-top: 1.5rem;
+    margin-top: rem(20px);
     margin-bottom: 0;
-    line-height: 1.5rem;
+    line-height: 1.2;
 }
 h1 {
     font-size: 4.242rem;

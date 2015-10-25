@@ -1,16 +1,42 @@
 .video-list{
-    margin-top: rem(80px);
+    margin-top: 2rem;
+    
+    @include span(8 of 12);
+}
 
-    a{
-        color:#666;
-        text-decoration: none;
+.video-list-item{
+    margin-bottom: rem(60px);
+    
+    .meta{
+        @include span(3 of 8);
+    }
+
+    .content{
+        @include span(5 of 8);
+    }
+
+    .meta{
+        margin-top: rem(60px);
+    }
+
+    h3{
+        margin-bottom: 20px;
+        font-size: rem(35px);
         
-        &:hover{
-            color:$orange;
+        a{
+            color:#666;
+            text-decoration: none;
+            
+            &:hover{
+                color:$orange;
+            }
         }
     }
 }
 
-.video-list-item{
-    margin-bottom: rem(40px);
+.tags-list{
+    @include span(4 of 12);
+    text-align: right;
+    margin-top: 2rem;
 }
+
