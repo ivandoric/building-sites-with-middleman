@@ -34,4 +34,29 @@ title: Welcome to Middleman
           <% end %>
         </ol>
     </div>
+    <div class="clr"></div>
+    <div class="clearfix">
+        <h3>List of friends</h3>
+        <br>
+        <br>
+        <% data.people.friends.each do |friend| %>
+            <%= friend  %><br>
+        <% end %>
+    </div>
+
+    <div class="clearfix">
+        <h3>List of movies</h3>
+        <br>
+        <br>
+        <% data.movies.movies.each do |movie| %>
+            <ul>
+                <li><strong>Title:</strong> <%= movie.title  %></li>
+                <li><strong>Director:</strong> <%= movie.director  %></li>
+                <li><strong>Actors:</strong> <%= movie.actors  %></li>
+                <li>
+                    <%= thumb_tag movie.poster, '200x' %>
+                </li>
+            </ul>
+        <% end %>
+    </div>
 </div>
