@@ -76,8 +76,22 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+
 activate :directory_indexes
 activate :dragonfly_thumbnailer
+
+activate :deploy do |deploy|
+  deploy.method        = :rsync
+  deploy.host          = 'watch-learn.com'
+  deploy.path          = '/home/watchlea/www/wlmiddleman'
+  deploy.user          = 'watchlea'
+  deploy.build_before  = true
+  # Optional Settings
+  # deploy.user  = 'tvaughan' # no default
+  # deploy.port  = 5309 # ssh port, default: 22
+  # deploy.clean = true # remove orphaned files on remote host, default: false
+  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+end
 
 # Build-specific configuration
 configure :build do
@@ -94,5 +108,5 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  set :http_prefix, "/wlmiddleman"
 end
